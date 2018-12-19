@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+    <head>
+	<title>Visual-Soundilizer</title>
+	<link rel="stylesheet" type="text/css" href=stylesheet.css>
+	<meta charset= "utf-8">
+	
+	<!--  -->
+	 
+	     <script src="https://cdn.jsdelivr.net/npm/resonance-audio/build/resonance-audio.min.js"></script> <!-- google resonance audio -->
+
+		  
+		  
+		<script src="JS/resonanceAudioInit.js"></script> 
+		<script src="JS/audioFileList.js"></script> 
+		<script src="JS/play.js"></script> 
+		<script src="JS/moveAudioSource.js"></script> 
+	
+	   
+		 
+	
+	</head>
+	
+		
+		   <div class="secondheader"> 
+		| <a href="index.html" style="color:black">3D-Audio</a> |
+		<a href="Projekt/index.html" >3D-Test</a> |
+		<a href="Mp3/index_mp3Player.html" >MP3-Player</a> |
+</div>
+
+		<!-- Noisemaker	-->
+		<div class="header">
+			<div>
+				<input class="Noisemaker" id="s3" onclick="selectSong(3)" type="button" value="Footsteps"></button> 
+			</div>
+			<div>
+				<input class="Noisemaker" id="s0" onclick="selectSong(0)" type="button" value="Cat"></button> 
+			</div>
+			<div>
+				<input class="Noisemaker" id="s1"  onclick="selectSong(1)" type="button" value="Bird"></button> 
+			</div>
+			<div>
+				<input class="Noisemaker" id="s2" onclick="selectSong(2)" type="button" value="Wind"></button> 
+			</div>
+			<div>
+				<input class="Noisemaker" id="s4" onclick="selectSong(4)" type="button" value="Rain"></button> 
+			</div>
+			<div>
+				<input class="Noisemaker" id="s5" onclick="selectSong(5)" type="button" value="Gull"></button> 
+			</div>
+			<div>
+				<input class="Noisemaker" id="s6" onclick="selectSong(6)" type="button" value="Accordion"></button> 
+			</div>
+			<div>
+				<input class="Noisemaker" id="s7" onclick="selectSong(7)" type="button" value="Frogs"></button> 
+			</div>
+			<div>
+				<input class="Noisemaker" id="s8" onclick="selectSong(8)" type="button" value="Watersplash"></button> 
+			</div>
+			<div>
+				<input class="Noisemaker" id="s9" onclick="selectSong(9)" type="button" value="Shipbell"></button> 
+			</div>
+			<div>
+				<input class="Noisemaker" id="s10" onclick="selectSong(10)" type="button" value="Crow"></button> 
+			</div>
+		 
+		 
+		 
+		 </div>
+		
+		
+		  <!-- Playbutton	-->
+		 
+		 <input id="playbtn" type="button" onclick="playOrPauseSong()"  class="playbtn" >  </input> 
+		 <input id="pausebtn" type="button" onclick="playOrPauseSong()"  class="playbtn">  </input> 
+		 
+<div class="songarea">
+		  <h3>Songs (Vorsicht laut)</h3> 
+		  <input class="Songmaker" id="s11" onclick="selectSong(11)" type="button" value="Italian"></button> 
+		  <input class="Songmaker" id="s12" onclick="selectSong(12)" type="button" value="FUSE"></button> 
+		  <input class="Songmaker" id="s13" onclick="selectSong(13)" type="button" value="Mortals"></button> 
+		  <input class="Songmaker" id="s14" onclick="selectSong(14)" type="button" value="Violine"></button> 
+		  </div> 
+		
+		  
+		 <div id="CoordinatesAndPlay" class=mainContainer>
+			X: <span id="Xcoordinate" class="Xloc">0</span>  /  
+			Y: <span id="Ycoordinate" class="YLoc">0</span>
+		 
+		</div>
+		
+		 
+		
+		 
+		
+		  
+		 
+		 
+		 
+				 
+		 
+		 <!-- move AudioSource	-->
+		 
+			<div id="3dAudioBox" class=mainContainer>	
+				<input id="up" type="button" onclick="moveSource(0)"  class="MoveY" > </input> 
+				<div> 
+ 
+					<input id="left" type="button" onclick="moveSource(1)"  class="MoveX" > </input>
+					<input id="central" type="button" onclick="moveSource(2)"  class="MoveX" > </input>
+					<input id="right" type="button" onclick="moveSource(3)"  class="MoveX" > </input>
+					
+				</div>
+				<div>
+					<input id="down" type="button" onclick="moveSource(4)"  class="MoveY" > </input>
+					<!--	X: <span id="Xcoordinate" class="Xloc">0</span>   
+						Y: <span id="Ycoordinate" class="YLoc">0</span>   </div> </br>	-->
+		 <!-- Evtl regler für Z achse?	-->
+		 
+				</div> 
+			
+			</div>
+		 
+		 
+	
+		 
+<!-- Volume	-->
+			<div id="EqualizerBox" class=mainContainer> 	
+		  
+			 
+				<div id="volumeContainer">Volume
+					<input type="range" min="0" max="100" value="20" class="slider" id="volumeslider">
+				
+					<span id="volumeOutput" class="output">20 dB</span>
+				
+			 
+			 <script src="JS/volume.js"></script> 
+
+			 
+			</div>	
+			
+			
+			
+		
+		
+		
+			
+		
+		 
+	
+
+
+		 
+		 
+		</body>
+		
+		
+</html>
