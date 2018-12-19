@@ -1,0 +1,16 @@
+Kurzer Kommentar, welche Ordner/Dateien für welchen Seitenteil zuständig sind.
+
+3D-Audio    HAUPTSEITE
+ - Audio
+ - JS
+ - Pictures
+ - index
+ - stylesheet
+
+3D-Test
+ -> Projekt  Ordner
+ -> stylesheet
+
+MP3-Player
+ -> MP3      Ordner
+ -> stylesheet

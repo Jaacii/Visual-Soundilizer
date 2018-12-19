@@ -1,0 +1,265 @@
+/*css*/
+
+body {
+	background-color: #44318D;	
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+}
+
+.mainContainer {
+	display: inline-block;
+}
+
+/*------------------------*/
+
+/*Noisemaker*/
+.header {						/*contains Noisemaker*/
+	width: 100%;
+	height: 160px;	
+	background-color: #2A1B3D;
+}
+.secondheader {
+	width: 100%;
+	background-color: #D83F87;
+	font-size: 1.5em;
+}
+
+.Noisemaker {
+	
+	border: 3px gray68;
+	float: left;
+	width: 120px;
+	height: 95px;				/*höhe */
+	margin-top: 18px;
+	
+	margin-left: 5px;	
+	margin-right: 5px;
+	display:  inline-block;		/*positioniert sich nebeneinander wenn möglich */
+	background-color: #D83F87;
+	text-align: center;
+	
+}
+
+.songarea {
+	margin-left: 1400px;
+	
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: #A4B3B6
+		
+}
+.Songmaker {
+	background-color: #000000;
+	color: #FFFFFF;
+	top: 100px;
+	width: 20%;
+	height: 40px;
+}
+/*------------------------*/
+
+
+
+
+/*PlayButton*/
+.playbtn {
+	
+
+	/*float: both;*/
+	left: 50;
+	top: 50;
+	width: 10%;
+	height: 180px;
+	margin-left: 155px;  
+	/*margin-right: 1500px; */
+	
+	float: left;
+	
+		
+	border: none;
+
+	
+	
+	
+}
+#playbtn {
+	background: url("Pictures/play.png") no-repeat scroll 0 0 transparent;
+}
+#pausebtn {
+	background: url("Pictures/pause.png") no-repeat scroll 0 0 transparent;
+	display:none;
+}
+#up {
+	background: url("Pictures/up.png") no-repeat scroll 0 0 transparent;
+	background-color: #A4B3B6 
+}
+#left {
+	background: url("Pictures/left.png") no-repeat scroll 0 0 transparent;
+	background-color: #A4B3B6 
+}
+#right {
+	background: url("Pictures/right.png") no-repeat scroll 0 0 transparent;
+	background-color: #A4B3B6 
+}
+#down {
+	background: url("Pictures/down.png") no-repeat scroll 0 0 transparent;
+	background-color: #A4B3B6 ;  
+}
+#central {
+	background: url("Pictures/reset.png") no-repeat scroll 0 0 transparent;
+	background-color: #A4B3B6 
+}
+
+#CoordinatesAndPlay{
+	width: 10%;
+	height: 10% ;
+	text-align: center;
+	border: 5px gray68;
+	color: #FFFFFF;
+	background-color: #A67FFF ;
+	margin-left: 155px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-size: 30px;
+	display: inline-block;
+	margin-right: 1500px;
+}
+
+/*------------------------*/
+
+/* MoveButtons*/
+#3dAudioBox {					
+	width: 50%;
+	height: 460px;
+	float: left;
+	padding:10px;
+	
+	
+	overflow: hidden; 
+	margin-left: 30px;
+	padding: 20px;
+	
+}
+
+.MoveY {
+	width: 150px;
+	height: 150px;	
+	
+	margin-left:174px; 
+	margin-right: 10px;
+	
+	display:  inline-block;	
+	
+}
+.MoveX {
+	width: 150px;
+	height: 150px;	
+	
+	display:  inline-block;	
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+/*------------------------*/
+
+
+/*Equalizer      contains Slider*/
+#EqualizerBox {					
+	
+	margin-left: 30px;
+	
+	float: both;
+	width: 50%;
+	height: 460px;
+	text-align: center;
+	font-size: 20px;
+	color: #A4B3B6;
+	
+	
+}
+
+
+.slider {
+	text-align: center;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #ADADAD;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+	
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #2E1114;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2E1114;
+    cursor: pointer;
+}
+/*------------------------*/
+/* MP3 Player*/
+#fileload {
+  position: fixed;
+  top: 35px;
+  left: 15px;
+  z-index: 100;
+  width: 20%;
+  
+  background-color: #A4B3B6;
+}
+
+#canvas {
+  position: fixed;
+  top: 30;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+audio {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  width: calc(100% - 20px);
+}
+
+
+
+
+/*3D-Test*/
+#canvas2 {
+	position: absolute;
+	top: 200px;
+	left: 400px;
+	background-color: #135056;
+	background-image: url("Projekt/background1.png")
+	
+	
+}
+
+#status {
+	left: 420px;
+	
+	padding: 10px;
+	position: absolute;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+/*------*/

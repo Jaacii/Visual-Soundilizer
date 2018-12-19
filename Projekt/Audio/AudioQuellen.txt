@@ -1,0 +1,11 @@
+rain: http://soundbible.com/1999-Rain.html
+cat: http://soundbible.com/1684-Cat-Meowing-2.html
+bird: http://soundbible.com/2180-Meadowlark.html
+wind : http://soundbible.com/1247-Wind.html
+footsteps: http://soundbible.com/2057-Footsteps-On-Cement.html
+gull: http://soundbible.com/1164-Bonapartes-Gull-2.html
+Accordion: http://soundbible.com/528-Accordion.html
+frogs: http://soundbible.com/2033-Frogs.html
+watersplash: http://soundbible.com/1460-Water-Splash.html
+shipbell: http://soundbible.com/1746-Ship-Bell.html
+crow: http://soundbible.com/155-Single-Crow.html

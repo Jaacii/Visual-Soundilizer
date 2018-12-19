@@ -1,0 +1,5 @@
+audioFileList  -> eigene JS um schnell die AudioListe zu finden und zu ergänzen.
+moveAudioSource -> Nutzung der Pfeiltasten
+play -> Playbutton
+resonanceAudioInit -> erstellt den Codingpart, welcher für die Audioverarbeitung zuständig ist. (Audiocontext, connects etc)
+volume -> volumeslider

@@ -1,0 +1,8 @@
+play      https://pixabay.com/de/color-is-changable-in-ps-button-2692603/
+person    https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/2000px-Person_icon_BLACK-01.svg.png
+volume    https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/2000px-Speaker_Icon.svg.png
+pause : https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Ic_pause_circle_fill_48px.svg/2000px-Ic_pause_circle_fill_48px.svg.png
+
+
+richtungen : https://cdn4.iconfinder.com/data/icons/game-interface-outline/100/objects-25-512.png
+reset: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Close-cross-thin-circular-button.svg/2000px-Close-cross-thin-circular-button.svg.png
