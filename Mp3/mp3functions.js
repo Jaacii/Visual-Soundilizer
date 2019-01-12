@@ -1,10 +1,10 @@
 
 window.onload = function() {
-/*get html parts/elements*/
+/*HTML Elemente kriegen*/
   var file = document.getElementById("fileload");
   var audio = document.getElementById("audio");
   
-/*When audio selected -> create bars, audiocontext etc etc*/
+/*Wenn die Audiodatei ausgesucht ist -> erschaffe Bars, Audiocontext etc etc*/
   file.onchange = function() {
     var files = this.files;
     audio.src = URL.createObjectURL(files[0]);
@@ -24,30 +24,31 @@ window.onload = function() {
     audioElementSource2.connect(analyser);
     analyser.connect(audioContext.destination);
     analyser.fftSize = 256;
+  /*Analayse der Frequenzdaten wird in ein array ghepackt "bufferlength" */
     var bufferLength = analyser.frequencyBinCount;
     console.log(bufferLength);
 
     var dataArray = new Uint8Array(bufferLength);
-    var WIDTH = canvas.width;					//HEIGHT -> canvas height etc
+    var WIDTH = canvas.width;					//HEIGHT -> canvas Höhe etc
     var HEIGHT = canvas.height;
-    var bWidth = (WIDTH / bufferLength) * 3;  // b -> bar height and width
+    var bWidth = (WIDTH / bufferLength) * 3;  // b -> bar Höhe und Weite
     var bHeight;
     var x = 0;
 
     function renderFrame() {
-/*AnalyserData + Canvas Colorisation*/
+/*AnalyserData + Canvas Colorisierung*/
       requestAnimationFrame(renderFrame);
       x = 0;
       analyser.getByteFrequencyData(dataArray);
-      ctx.fillStyle = "#000";	//black background
+      ctx.fillStyle = "#000";	//schwarzer Hintergrund
       ctx.fillRect(0, 0, WIDTH, HEIGHT);
 
 	  
-/*Bars-Generation*/
+/*Bars-Generierung*/
       for (var i = 0; i < bufferLength; i++) {
         bHeight = dataArray[i];
 		
-/*Color*/
+/*Farbe*/
         var r = bHeight + (170 * (i/bufferLength));
         var g = 450 * (i/bufferLength);
         var b = 250;
